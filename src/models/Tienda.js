@@ -49,6 +49,27 @@ const TiendaSchema = new Schema({
     politicasDescuentos: String,
     politicasDevolucion: String,
     diasHorariosEmpresas: String,
+    colorPage:{
+        navPrimary: {
+            text: String,
+            background: String,
+            hoverText: String
+        },
+        navSecondary: {
+            text: String,
+            background: String,
+            hoverText: String
+        },
+        bodyPage: {
+            text: String,
+            background: String,
+            hoverText: String,
+            card: {
+                text: String,
+                background: String
+            }
+        }
+    }
 });
 
 module.exports = model('tienda', TiendaSchema);
