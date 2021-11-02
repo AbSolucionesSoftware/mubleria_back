@@ -18,6 +18,7 @@ adminCtrl.createAdmin = async (req, res) => {
 		const newAdmin = new adminModel();
 		const { nombre, email, contrasena, repeatContrasena } = req.body;
 	
+		
 		newAdmin.nombre = nombre;
 		newAdmin.email = email;
 		newAdmin.rol = true;
