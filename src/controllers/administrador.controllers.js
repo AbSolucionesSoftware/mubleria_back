@@ -13,12 +13,12 @@ adminCtrl.getAdmins = async (req, res) => {
 
 };
 
+
+
 adminCtrl.createAdmin = async (req, res) => {
 	try {
 		const newAdmin = new adminModel();
 		const { nombre, email, contrasena, repeatContrasena } = req.body;
-	
-		
 		newAdmin.nombre = nombre;
 		newAdmin.email = email;
 		newAdmin.rol = true;
